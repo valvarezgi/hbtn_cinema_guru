@@ -1,0 +1,66 @@
+.Authentication {
+  height: 360px;
+  width: 450px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.Login,
+.Register {
+  background-color: var(--white-primary-color);
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.Login form,
+.Register form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.selection {
+  display: flex;
+}
+.selection > * {
+  flex: 1;
+}
+
+.Login input,
+.Register input {
+  margin-bottom: 2rem;
+}
+
+.Login h4,
+.Register h4 {
+  margin-bottom: 2rem;
+}
+
+.Login button,
+.Register button {
+  position: absolute;
+  right: 3rem;
+  width: 6rem;
+  font-weight: 400;
+}
+
+.authentication-error {
+  position: absolute;
+  top: 50px;
+  height: 15px;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+  font-size: 2rem;
+  color: var(--red-primary-color);
+}
+
+.Authentication .error input {
+  border: thin dotted var(--red-primary-color);
+}

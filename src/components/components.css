@@ -1,0 +1,17 @@
+.Activity {
+  background-color: var(--black-secondary-color);
+  color: var(--white-secondary-color);
+  font-size: 12px;
+  width: 195px;
+  padding: 0 0.2rem;
+}
+
+.Activity li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Activity span {
+  color: var(--red-primary-color);
+}

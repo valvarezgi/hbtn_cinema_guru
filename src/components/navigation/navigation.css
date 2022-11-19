@@ -1,0 +1,110 @@
+.Header {
+  display: flex;
+  width: 100%;
+  color: var(--white-primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--black-primary-color);
+  font-size: 1rem;
+}
+
+.Header img {
+  border-radius: 50%;
+  border: solid thin red;
+  background-size: cover;
+  width: 40px;
+  height: auto;
+}
+
+.Header span {
+  display: flex;
+  align-items: center;
+  color: var(--red-secondary-color);
+  gap: 0.5rem;
+}
+
+.header-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header-right span {
+  cursor: pointer;
+}
+
+.Sidebar {
+  background-color: var(--red-primary-color);
+  color: var(--white-secondary-color);
+  max-height: inherit;
+  min-height: 100vh;
+  max-width: 200px;
+}
+
+.Sidebar ul {
+  padding-left: 0;
+}
+.Sidebar li {
+  list-style-type: none;
+  padding: 0.5rem 1rem;
+  font-size: 15px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.Sidebar .menu-item:hover {
+  background-color: var(--red-secondary-color);
+}
+
+.Sidebar .next-row {
+  opacity: 0;
+  position: absolute;
+  right: 14px;
+}
+
+.Sidebar .menu-item:hover .next-row {
+  opacity: 1;
+}
+
+.activities {
+  background-color: var(--black-secondary-color);
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  display: none;
+}
+.activities h3 {
+  text-decoration: underline;
+  text-align: center;
+}
+
+.activities .Activity {
+  width: 100%;
+}
+
+.Sidebar a {
+  text-decoration: none;
+  color: var(--white-secondary-color);
+  font-weight: 500;
+}
+
+.Sidebar .selected {
+  background-color: var(--red-secondary-color);
+}
+
+.sidebar-text-content {
+  display: none;
+}
+
+.Sidebar:hover .sidebar-text-content,
+.Sidebar:hover .activities {
+  display: block;
+}

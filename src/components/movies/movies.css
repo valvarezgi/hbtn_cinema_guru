@@ -1,0 +1,139 @@
+.Tag {
+  list-style-type: none;
+  color: var(--white-primary-color);
+  border: thin solid var(--red-secondary-color);
+  border-radius: 25px;
+  padding: 0 0.5rem 0.2rem;
+  cursor: pointer;
+  font-weight: 600;
+  display: inline;
+  transition: all var(--transition-time);
+}
+
+.movie-tag-bg-red {
+  background-color: var(--red-secondary-color);
+  transition: all var(--transition-time);
+}
+
+.Filter {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.filter-left {
+  min-width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+}
+.filter-right {
+  max-width: 60%;
+  padding: 1rem;
+  display: flex;
+  flex-flow: wrap;
+}
+.filter-right .Tag {
+  margin-right: 0.5rem;
+}
+
+.Filter .filter-inputs {
+  display: flex;
+  gap: 1rem;
+}
+
+.MovieCard {
+  cursor: pointer;
+  width: 340px;
+  min-height: 450px;
+  background-color: var(--gray-primary-color);
+  color: black;
+  transition: all var(--transition-time);
+  box-shadow: -4px 4px 32px 8px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: -4px 4px 32px 8px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: -4px 4px 32px 8px rgba(0, 0, 0, 0.7);
+}
+.MovieCard:hover {
+  transform: scale(1.1);
+  transition: all var(--transition-time);
+}
+
+.MovieCard img {
+  width: 340px;
+  height: 340px;
+  background-size: cover;
+}
+
+.MovieCard section {
+  position: relative;
+}
+
+.movie-card-cover {
+  position: absolute;
+  height: 45px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  opacity: 0.5;
+  bottom: 3px;
+}
+
+.movie-card-title {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  position: absolute;
+  bottom: 0.8rem;
+  margin: 0;
+  margin-left: 10px;
+  padding: 0;
+  width: 100%;
+}
+
+.movie-card-resume {
+  color: var(--white-secondary-color);
+  font-size: 13px;
+  margin: 0;
+  padding: 0 0.8rem;
+}
+
+.MovieCard .movie-card-icons {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  width: 100%;
+  height: 40px;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  align-items: center;
+}
+
+.MovieCard svg {
+  color: white;
+  cursor: pointer;
+  transition: all var(--transition-secondary-time);
+}
+
+.MovieCard svg path {
+  stroke: var(--white-primary-color);
+  stroke-width: 15;
+  transition: all var(--transition-secondary-time);
+}
+
+.is-favorite path,
+.is-watch-later path {
+  color: transparent;
+  transition: all var(--transition-secondary-time);
+}
+
+.movie-card-tags {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
